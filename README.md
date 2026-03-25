@@ -1,22 +1,22 @@
 # project-notes
 
-Revisar html
+1. Revisar html
 
-Revisar css
+2. Revisar css
 
-Revisar SASS
+3. Revisar SASS
 
-Revisar logica de programação
+4. Revisar logica de programação
 
-Revisar funções e métodos
+5. Revisar funções e métodos
 
-Revisar orientação a objetos
+6. Revisar orientação a objetos
 
-Revisar algoritmos
+7. Revisar algoritmos
 
-Revisar Solid
+8. Revisar Solid
 
-Revisar Design paterns
+9. Revisar Design paterns
 
-
+10. Mão na massa!!!
 
