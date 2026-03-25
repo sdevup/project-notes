@@ -1,6 +1,10 @@
 # project-notes
-Project for advanced notes
 
+Revisar html
+
+Revisar css
+
+Revisar SASS
 
 Revisar logica de programação
 
@@ -14,5 +18,5 @@ Revisar Solid
 
 Revisar Design paterns
 
-Revisar SASS
+
 
