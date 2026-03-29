@@ -17,8 +17,6 @@ $router = require __DIR__ . '/routes/web.php';
 $method = $_SERVER['REQUEST_METHOD'];
 $path = $_SERVER['REQUEST_URI'] ?? '/';
 
-header('Content-Type: application/json');
-
 $response = $router->dispatch($method, $path);
 
 echo $response;

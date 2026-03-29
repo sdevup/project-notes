@@ -6,6 +6,7 @@ class HomeController
 {
     public function index()
     {
-        return json_encode(['message' => 'olá']);
+        $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../src/framework/Render/views');
+        return $renderer->render('home');
     }
 }
