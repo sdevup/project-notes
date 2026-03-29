@@ -1,0 +1,13 @@
+{
+    "name": "projeto-anotacoes/framework-simples",
+    "description": "Framework simples estilo Laravel (ORM e render)",
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "src/framework/",
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}
