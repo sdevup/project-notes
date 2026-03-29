@@ -2,24 +2,21 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Framework\Render\Renderer;
-use Framework\ORM\Model;
+// Configurar autoload para App
+spl_autoload_register(function ($class) {
+    if (strpos($class, 'App\\') === 0) {
+        $file = __DIR__ . '/../' . str_replace('\\', '/', $class) . '.php';
+        if (file_exists($file)) {
+            require $file;
+        }
+    }
+});
 
-// Exemplo de model ORM
-class User extends Model
-{
-    protected static string $table = 'users';
-}
+$router = require __DIR__ . '/../routes/web.php';
 
-// Gravar exemplo
-$user = new User(['name' => 'João', 'email' => 'joao@exemplo.com']);
-$user->save();
+$method = $_SERVER['REQUEST_METHOD'];
+$path = $_SERVER['REQUEST_URI'] ?? '/';
 
-// Ler todos
-$users = User::all();
+$response = $router->dispatch($method, $path);
 
-// Render de exemplo
-$renderer = new Renderer(__DIR__ . '/../src/framework/Render/views');
-$html = $renderer->render('home', ['users' => $users]);
-
-echo $html;
+echo $response;

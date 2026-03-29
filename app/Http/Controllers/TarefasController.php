@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-class HomeController
+class TarefasController
 {
     public function index()
     {
         $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
-        return $renderer->render('home');
+        return $renderer->render('tarefas');
     }
 }
