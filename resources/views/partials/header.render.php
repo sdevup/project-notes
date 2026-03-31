@@ -1,11 +1,14 @@
-<header class="site-header">
-  <div class="logo">Project Notes</div>
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/login">Login</a></li>
-      <li><a href="/principal">Principal</a></li>
-      <li><a href="/test">Test</a></li>
-    </ul>
-  </nav>
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="/" style="color: white; text-decoration: none; font-weight: 700;">Project Notes</a>
+    </div>
+
+    <nav class="nav" aria-label="Menu principal">
+      <a href="/">Home</a>
+      <a href="/login">Login</a>
+      <a href="/principal">Principal</a>
+      <a href="/test">Test</a>
+    </nav>
+  </div>
 </header>

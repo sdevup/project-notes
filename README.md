@@ -20,3 +20,26 @@
 
 10. Mão na massa!!!
 
+
+
+## Como criar a imagem Docker
+
+Estar na raiz do projeto e executar esse comando
+
+```bash
+docker build -t php-node-sass .
+``` 
+
+
+
+## Como subir o container no Docker (Windows)
+
+```bash
+docker run --name project-notes -v $(pwd):/var/www/html -p 8000:80 php-node-sass
+```
+
+## Como subir o container no Docker (Linux)
+
+```bash
+docker run --name project-notes -v $(pwd):/var/www/html -p 8000:80 php-node-sass
+``

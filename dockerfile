@@ -1,4 +1,4 @@
-FROM php:8.2-cli
+FROM php:8.2-apache
 
 # Instala Node.js
 RUN apt-get update && apt-get install -y curl gnupg \
@@ -6,14 +6,20 @@ RUN apt-get update && apt-get install -y curl gnupg \
     && apt-get install -y nodejs \
     && apt-get clean
 
-# Define diretório
-WORKDIR /app
-
 # Instala Sass
 RUN npm install -g npm@11.12.1 && npm install -g sass
 
-# Expõe a porta do PHP
-EXPOSE 8000
+# Define diretório de trabalho
+WORKDIR /var/www/html
 
-# Script para rodar tudo junto
-CMD sh -c "sass --watch ./resources/sass:./public/css & php -S 0.0.0.0:8000 -t /app"
+# Ativa mod_rewrite (necessário para .htaccess)
+RUN a2enmod rewrite
+
+# Permite .htaccess (override)
+RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
+
+# Expõe porta padrão do Apache
+EXPOSE 80
+
+# Inicia Sass + Apache
+CMD sh -c "sass --watch ./resources/sass:./public/css & apache2-foreground"
