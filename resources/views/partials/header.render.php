@@ -1,13 +1,11 @@
-<header>
-<nav>
+<header class="site-header">
+  <div class="logo">Project Notes</div>
+  <nav>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/login">Login</a></li>
-        <li><a href="/principal">Principal</a></li>
-        <li><a href="/test">Test</a></li>
-        
+      <li><a href="/">Home</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/principal">Principal</a></li>
+      <li><a href="/test">Test</a></li>
     </ul>
-
-</nav>
-
+  </nav>
 </header>
