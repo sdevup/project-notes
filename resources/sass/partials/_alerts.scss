@@ -1,0 +1,18 @@
+@mixin alert-variant($bg, $border, $text: #111827) {
+  background-color: $bg;
+  border: 1px solid $border;
+  color: $text;
+  padding: 0.75rem 1rem;
+  border-radius: $border-radius;
+  margin-bottom: 1rem;
+}
+
+.alert {
+  @include alert-variant(#eff6ff, #bfdbfe);
+}
+
+.alert-primary { @include alert-variant(#dbeafe, #93c5fd, #1d4ed8); }
+.alert-secondary { @include alert-variant(#ede9fe, #c4b5fd, #7c3aed); }
+.alert-success { @include alert-variant(#dcfce7, #34d399, #065f46); }
+.alert-warning { @include alert-variant(#fef3c7, #facc15, #92400e); }
+.alert-danger { @include alert-variant(#fee2e2, #fca5a5, #991b1b); }

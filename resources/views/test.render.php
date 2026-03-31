@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    
+    <!-- Adiciona o header contido em /partials-->
     @include('partials.header')
-    <!-- Conteúdo da página de testes -->
-    <h1> Página de testes</h1>
 
-
-    <a href="/">Voltar para Home</a>
+    <h1>Página Teste</h1>
+ 
+    <!-- Adiciona o footer contido em partials-->
     @include('partials.footer')
+
+     
     <script src="/js/script.js"></script>
 </body>
 </html>

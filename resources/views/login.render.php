@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    
+    <!-- Adiciona o header contido em /partials-->
     @include('partials.header')
-    <h1>Bem-vindos ao meu Site!! SDEV</h1>
-    <p>Este é um exemplo de view com @include.</p>
+
+    <h1>Página login</h1>
+ 
+    <!-- Adiciona o footer contido em partials-->
     @include('partials.footer')
+
+     
     <script src="/js/script.js"></script>
 </body>
 </html>

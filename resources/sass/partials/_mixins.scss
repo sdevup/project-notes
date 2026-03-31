@@ -1,0 +1,17 @@
+@mixin transition($property: all, $duration: $transition-fast, $timing: ease-in-out) {
+  transition: $property $duration $timing;
+}
+
+@mixin button-variant($bg, $color: #fff, $border: transparent) {
+  background-color: $bg;
+  color: $color;
+  border: 1px solid $border;
+  border-radius: $border-radius;
+  @include transition(background-color, $transition-fast);
+
+  &:hover,
+  &:focus {
+    background-color: darken($bg, 8%);
+    text-decoration: none;
+  }
+}
