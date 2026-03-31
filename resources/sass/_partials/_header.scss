@@ -1,0 +1,218 @@
+header {
+  background-color: $primary;
+  color: $white;
+  padding: $space;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 20px;
+  color: $white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: $space;
+}
+
+.nav-menu a {
+  color: $white;
+  text-decoration: none;
+  padding: $space-sm;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: $secondary;
+}
+    transform: translateX(-100%);
+    transition: transform $transition-base;
+    
+    &.active {
+      transform: translateX(0);
+    }
+    
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      gap: 0;
+      
+      li {
+        width: 100%;
+        
+        a {
+          border-radius: 0;
+          padding: $spacing-md;
+          text-align: center;
+          
+          &:not(:last-child) {
+            border-bottom: $border-width solid rgba($white, 0.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// AÇÕES DO HEADER
+
+.header-actions {
+  display: flex;
+  gap: $spacing-md;
+  align-items: center;
+  
+  @media (max-width: $breakpoint-md) {
+    margin-top: $spacing-md;
+  }
+  
+  .btn {
+    margin: 0;
+  }
+}
+
+// DROPDOWN NO HEADER
+
+.header-dropdown {
+  position: relative;
+  
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: $spacing-sm $spacing-md;
+    border: none;
+    background: none;
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid currentColor;
+      margin-left: $spacing-xs;
+    }
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: $white;
+    color: $text-primary;
+    border-radius: $border-radius-md;
+    box-shadow: $shadow-lg;
+    min-width: 200px;
+    z-index: $z-index-dropdown;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity $transition-base, visibility $transition-base, transform $transition-base;
+    margin-top: $spacing-sm;
+    
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
+    a {
+      display: block;
+      padding: $spacing-md $spacing-lg;
+      color: $text-primary;
+      text-decoration: none;
+      transition: background-color $transition-base, color $transition-base;
+      
+      &:first-child {
+        border-radius: $border-radius-md $border-radius-md 0 0;
+      }
+      
+      &:last-child {
+        border-radius: 0 0 $border-radius-md $border-radius-md;
+      }
+      
+      &:hover {
+        background-color: $light-gray;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+// BREADCRUMB
+
+.breadcrumb {
+  display: flex;
+  gap: $spacing-sm;
+  padding: $spacing-md 0;
+  margin: 0;
+  list-style: none;
+  font-size: $font-size-sm;
+  
+  li {
+    display: flex;
+    align-items: center;
+    
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    &:not(:last-child)::after {
+      content: "/";
+      margin: 0 $spacing-sm;
+      color: $text-secondary;
+    }
+    
+    &:last-child {
+      color: $text-secondary;
+    }
+  }
+}
+
+// TOPBAR
+
+.topbar {
+  background-color: lighten($bg-dark, 10%);
+  padding: $spacing-sm $spacing-lg;
+  font-size: $font-size-sm;
+  color: $white;
+  text-align: right;
+  
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+    margin-left: $spacing-lg;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
