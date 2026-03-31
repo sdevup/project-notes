@@ -1,1 +1,24 @@
-// Header simples\nheader.site-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 1rem 1.5rem;\n  background: -primary;\n  color: white;\n  border-bottom: 1px solid rgba(255,255,255,0.15);\n}\n\nheader.site-header .logo {\n  font-size: 1.25rem;\n  font-weight: 700;\n}\n
+// Header simples
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav a:hover {
+  background-color: #555;
+}
