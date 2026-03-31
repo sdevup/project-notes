@@ -4,7 +4,15 @@ use Framework\Router\Router;
 
 $router = new Router();
 
-$router->get('/', 'HomeController@index');
+$router->get('/home', 'HomeController@index');
 $router->get('/tarefas', 'TarefasController@index');
+$router->get('/test', 'TestController@test');
+
+# Rotas adicionais
+
+$router->get('/', 'HomeController@home');
+$router->get('/login', 'LoginController@login');
+$router->get('/principal', 'PrincipalController@principal');
+    
 
 return $router;

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-class TarefasController
+class LoginController
 {
-    public function index()
+    public function login()
     {
         $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
-        return $renderer->render('tarefas');
+        return $renderer->render('login');
     }
 }

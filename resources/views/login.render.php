@@ -8,7 +8,7 @@
 </head>
 <body>
     @include('partials.header')
-    <h1>Bem-vindo ao Framework Simples</h1>
+    <h1>Bem-vindos ao meu Site!! SDEV</h1>
     <p>Este é um exemplo de view com @include.</p>
     <a href="/tarefas">Ver Tarefas</a>
     @include('partials.footer')

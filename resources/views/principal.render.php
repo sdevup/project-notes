@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
+    <title>Framework Simples</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Lista de Tarefas</h1>
-    <p>Aqui você pode gerenciar suas tarefas.</p>
-    <a href="/">Voltar para Home</a>
+    @include('partials.header')
+    <h1>Bem-vindo ao Framework Simples</h1>
+    <p>Este é um exemplo de view com @include.</p>
+    <a href="/tarefas">Ver Tarefas</a>
+    @include('partials.footer')
     <script src="/js/script.js"></script>
 </body>
 </html>
