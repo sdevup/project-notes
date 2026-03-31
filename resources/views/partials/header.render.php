@@ -6,7 +6,6 @@
         <li><a href="/principal">Principal</a></li>
         <li><a href="/test">Test</a></li>
         
-
     </ul>
 
 </nav>

@@ -6,5 +6,5 @@ function saudacao() {
 
 // Chama a função ao carregar a página
 window.onload = function() {
-    saudacao();
+    //saudacao();
 };
