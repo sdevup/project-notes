@@ -36,6 +36,11 @@ docker build -t php-node-sass .
 
 ```bash
 docker run --name project-notes -v $(pwd):/var/www/html -p 8000:80 php-node-sass
+
+
+docker run --name project-notes -v %cd%:/var/www/html -p 8000:80 php-node-sass
+
+docker run --name project-notes -v ${PWD}:/var/www/html -p 8000:80 php-node-sass
 ```
 
 ## Como subir o container no Docker (Linux)
@@ -43,3 +48,4 @@ docker run --name project-notes -v $(pwd):/var/www/html -p 8000:80 php-node-sass
 ```bash
 docker run --name project-notes -v $(pwd):/var/www/html -p 8000:80 php-node-sass
 ``
+

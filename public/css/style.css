@@ -362,7 +362,8 @@ main {
 }
 
 .header {
-  background-color: #1d4ed8;
+  /*background-color: $color-primary;*/
+  background: red;
   color: white;
   padding: 1rem 0;
 }

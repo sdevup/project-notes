@@ -22,4 +22,4 @@ RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
 EXPOSE 80
 
 # Inicia Sass + Apache
-CMD sh -c "sass --watch ./resources/sass:./public/css & apache2-foreground"
+CMD sh -c "sass --watch ./resources/sass/style.scss:./public/css & apache2-foreground"
