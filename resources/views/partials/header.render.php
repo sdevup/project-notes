@@ -8,7 +8,10 @@
       <a href="/">Home</a>
       <a href="/login">Login</a>
       <a href="/principal">Principal</a>
-      <a href="/test">Test</a>
+      <a href="/test">
+        Pedro DEV
+      </a>
+      <a href="/test2">Sdev</a>
     </nav>
   </div>
 </header>
