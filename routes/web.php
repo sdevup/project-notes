@@ -6,7 +6,9 @@ $router = new Router();
 
 $router->get('/home', 'HomeController@index');
 $router->get('/tarefas', 'TarefasController@index');
-$router->get('/test', 'TestController@test');
+$router->get('/test', 'TestController@test'); //PedroDev
+
+$router->get('/test2', 'TestController@test'); //sdev
 
 # Rotas adicionais
 

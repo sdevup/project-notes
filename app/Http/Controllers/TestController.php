@@ -9,4 +9,10 @@ class TestController
         $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
         return $renderer->render('test');
     }
+
+    ublic function test2()
+    {
+        $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
+        return $renderer->render('test2');
+    }
 }
