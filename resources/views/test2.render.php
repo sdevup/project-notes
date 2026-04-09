@@ -14,7 +14,7 @@
     <h1>Página Teste 2</h1>
 
 
-    card
+    <button class="teste2">botão</button>
 
 
  
