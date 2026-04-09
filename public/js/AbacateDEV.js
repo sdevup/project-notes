@@ -1,11 +1,8 @@
-var mensagem = 'Olá, mundo!';
-
-
-
-
-
 document.querySelectorAll('.teste2').forEach(element => {
     element.addEventListener('click', () => {
-        alert('Teste 2');
+        // Sobe até o .card mais próximo e depois procura o .ps5 lá dentro
+        const card = element.closest('.card-abacate');
+        const mensagem = "O nome do jogo é: " + card.querySelector('.ps5').innerHTML;
+        alert(mensagem);
     });
 });

@@ -1,37 +1,23 @@
-html,
 body {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
+  // Faz o body ocupar no mínimo a altura total da tela
+  min-height: 100vh;
+  
+  // Transforma o body em um container flexível vertical
   display: flex;
   flex-direction: column;
+  
+  margin: 0; // Remove margens padrão do navegador
 }
 
 main {
+  // O segredo: o main cresce para ocupar todo o espaço disponível,
+  // empurrando o footer para baixo.
   flex: 1;
 }
 
-.container {
-  width: min(100%, 1080px);
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.header,
-.footer {
-  padding: 1rem;
-  text-align: center;
-}
-
-.header {
-  background: $color-primary;
+footer {
+  // Estilize seu footer normalmente
+  background: #333;
   color: white;
-}
-
-.footer {
-  background: darken($bg-light, 6%);
-  color: #374151;
-  margin-top: auto;
+  padding: 1rem;
 }
