@@ -620,8 +620,22 @@ main {
   padding: 0;
 }
 
-.teste2 {
-  background-color: rgb(162, 29, 29);
+body {
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+}
+
+.card {
+  width: 180px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.card img {
+  width: 100px;
+  border-radius: 50%;
 }
 
 .card-sdev {
