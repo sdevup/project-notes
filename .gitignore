@@ -1,2 +1,43 @@
-style.css
-style.css.map
+# Dependencies
+/vendor/
+/composer.lock
+
+# Environment variables
+.env
+
+# Generated CSS and maps
+public/css/**/*.css.map
+public/css.map
+
+# Optionally ignore generated CSS (regenerate from Sass)
+# public/css/**/*.css
+
+# Dev data
+src/storage/orm/*.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+
+# Logs
+*.log
+storage/logs/
+
+# Docker
+docker-compose.override.yml
+
+# Temp
+tmp/
+cache/
+
+# Images (if temp)
+# public/images/teste*.jpg
+
