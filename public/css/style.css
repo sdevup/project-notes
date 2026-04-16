@@ -642,7 +642,7 @@ footer {
 }
 .card-sdev .card-button {
   background-color: #ff0000;
-  color: white;
+  color: rgb(105, 6, 6);
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
