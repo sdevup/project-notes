@@ -9,6 +9,9 @@
 public/css/**/*.css.map
 public/css.map
 
+public/css/style.css.map
+public/css/style.css
+
 # Optionally ignore generated CSS (regenerate from Sass)
 # public/css/**/*.css
 
