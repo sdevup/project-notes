@@ -13,10 +13,7 @@
 
     <h1>Página Teste 2</h1>
 
-
-    <button class="teste2">botão</button>
-
-    <article class="card-sdev">
+    <article class="card-sdev" style="margin: 20px auto;">
         <div class="card-header">
             <img src="/images/teste1.jpg" alt="Descrição clara do SDEV" class="card-image">
         </div>
