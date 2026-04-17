@@ -8,13 +8,30 @@ class TestController
     public function test()
     {
         $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
-        return $renderer->render('test');
+        return $renderer->render('abacate.test');
     }
+
+    //rota para teste Pedro DEV
+     public function portifolio()
+    {
+        $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
+        return $renderer->render('abacate.portifolio');
+    }
+
+    //
+     public function contatos()
+    {
+        $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
+        return $renderer->render('abacate.contatos');
+    }
+
+
+
 
     //rota para teste 2 SDEV
     public function test2()
     {
         $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
-        return $renderer->render('test2');
+        return $renderer->render('sdev.test2');
     }
 }
