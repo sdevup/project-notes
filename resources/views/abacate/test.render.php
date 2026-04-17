@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     <!-- <link rel="stylesheet" href="/css/style.css"> --> <!--Não usar--> 
-    <link rel="stylesheet" href="/css/testes/abacate/testes-ab">
+    <link rel="stylesheet" href="/css/testes/abacate/testes-ab.css">
 
     <!-- bootstrap -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"> -->
@@ -16,8 +16,8 @@
     @include('components.header')
 
     <h1>Página Teste</h1>
-    <main class="container-abacate">
-        <div class=" card-abacate">
+    <main class="container-abacate fundo">
+        <div class=" card-abacate fundo">
             <img width="100px" src="https://image.api.playstation.com/vulcan/img/cfn/11307fllh6D-IvbpCa18N0vRggVeRYWA06paTNCj3DENJMScAzW2f3ry4IwFcXBAt9kWXdZGpGoOGjxJ_e9MdordMVAosNhZ.png" alt="Foto">
             <p class="ps5 ">Cuphead</p>
             <button class="teste2">Clique aqui</button>
