@@ -1,0 +1,20 @@
+@use '../abstracts/maps' as m;
+@use '../abstracts/mixins' as mx;
+
+// margin e padding
+$properties: (
+  m: margin,
+  p: padding
+);
+
+@each $prop-short, $prop-full in $properties {
+  @each $dir-short, $dir-full in m.$directions {
+    @each $size, $value in m.$spacers {
+
+      .#{$prop-short}#{$dir-short}-#{$size} {
+        @include mx.apply-spacing($prop-full, $dir-full, $value);
+      }
+
+    }
+  }
+}

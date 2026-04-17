@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as v;
 
+// Pontos de interrupção para o sistema de grid
 $grid-breakpoints: (
   sm: 576px,
   md: 768px,
@@ -8,6 +9,7 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 
+// Larguras máximas dos contêineres para cada ponto de interrupção
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -16,12 +18,31 @@ $container-max-widths: (
   xxl: 1320px
 );
 
-
-
+// Cores
 $color-palette: (
   primary: v.$color-primary,
   secondary: v.$color-secondary,
   success: v.$color-success,
   warning: v.$color-warning,
   danger: v.$color-danger
+);
+
+//Escala de espaçamento
+$spacers: (
+  0: 0,
+  1: v.$spacer * 0.25,
+  2: v.$spacer * 0.5,
+  3: v.$spacer,
+  4: v.$spacer * 1.5,
+  5: v.$spacer * 3
+);
+
+$directions: (
+  "": "",          // todos os lados
+  t: top,
+  b: bottom,
+  s: left,         // start
+  e: right,        // end
+  x: (left, right),
+  y: (top, bottom)
 );

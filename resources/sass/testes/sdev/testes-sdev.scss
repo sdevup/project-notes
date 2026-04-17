@@ -6,7 +6,10 @@
 
 @use '../../layout/containers';
 @use '../../layout/colors';
-
+@use '../../layout/spacing';
+@use '../../layout/grid';
+@use '../../layout/flex';
+@use '../../utilities/flex-utils';
 
 
 img{
@@ -15,6 +18,5 @@ img{
 }
 
 a{
-    color: variables.$bg-light;
     text-decoration: none;
 }

@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/maps' as m;
+@use '../abstracts/mixins' as mx;
+
+// ROW
+.row {
+  @include mx.make-row;
+}
+
+// COL BASE
+.col {
+  flex: 1 0 0%;
+  @include mx.make-col-base;
+}
+
+// COL AUTO
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+// COLS FIXAS (1–12)
+@for $i from 1 through v.$grid-columns {
+  .col-#{$i} {
+    @include mx.make-col($i);
+    @include mx.make-col-base;
+  }
+}
+
+// RESPONSIVO
+@each $bp, $value in m.$grid-breakpoints {
+
+  @include mx.breakpoint-up($bp) {
+
+    .col-#{$bp} {
+      flex: 1 0 0%;
+    }
+
+    @for $i from 1 through v.$grid-columns {
+      .col-#{$bp}-#{$i} {
+        @include mx.make-col($i);
+      }
+    }
+  }
+}

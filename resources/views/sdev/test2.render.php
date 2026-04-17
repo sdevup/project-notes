@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     <!-- <link rel="stylesheet" href="/css/style.css"> -->
-    <link rel="stylesheet" href="/css/testes/sdev/testes.css">
+    <link rel="stylesheet" href="/css/testes/sdev/testes-sdev.css">
 </head>
 <body>
     
     <!-- Adiciona o header contido em /partials-->
     @include('components.header')
 
-    <main class="container-xl bg-success">
+    <main class="container-xl bg-success text-light p-4">
         <h1>Página Teste 2</h1>
 
         <article class="card-sdev bg-dark text-light">
