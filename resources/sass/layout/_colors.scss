@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as * ;
+@use '../abstracts/maps' as *;
+@use '../abstracts/mixins' as *;
+
+@each $color, $max in $color-palette {
+
+    .text-#{$color} {
+        color: $max;
+    }
+
+    .bg-#{$color} {
+        background-color: $max;
+    }
+    // --container-#{$color}: #{$max};
+
+}
+
+
+.border{
+    border: 2px solid $color-danger;
+}
+
+.bg-light {
+  background-color: $bg-light;
+}
+
+.bg-dark {
+  background-color: $bg-dark;
+}
+
+.text-light {
+  color: $bg-light;
+}
+
+.text-dark {
+  color: $bg-dark;
+}

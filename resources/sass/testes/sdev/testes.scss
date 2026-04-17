@@ -1,0 +1,20 @@
+// Variáveis
+@use '../../abstracts/variables';
+@use '../../abstracts/maps';
+@use '../../abstracts/mixins';
+
+
+@use '../../layout/containers';
+@use '../../layout/colors';
+
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+    color: variables.$bg-light;
+    text-decoration: none;
+}

@@ -1,5 +1,5 @@
-<header class="header">
-  <div class="container">
+<header class="header border bg-dark text-light">
+  <div class="container-xl">
     <div class="logo">
       <a href="/" style="color: white; text-decoration: none; font-weight: 700;">Project Notes</a>
     </div>

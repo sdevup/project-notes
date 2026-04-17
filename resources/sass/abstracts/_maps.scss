@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as v;
+
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+
+
+$color-palette: (
+  primary: v.$color-primary,
+  secondary: v.$color-secondary,
+  success: v.$color-success,
+  warning: v.$color-warning,
+  danger: v.$color-danger
+);

@@ -1,10 +1,23 @@
-@import './partials/variables';
-@import './partials/mixins';
-@import './partials/base';
-@import './partials/layout';
-@import './partials/utilities';
-@import './partials/components';
+// Variáveis
+@use './abstracts/variables' as v;
+@use './abstracts/maps' as m;
+@use './abstracts/mixins' as mx;
+
 
 // Testes
-@import './testes/abacate/AbacateDEV';
-@import './testes/sdev/sdev';
+@use './testes/abacate/AbacateDEV' as Abacate;
+@use './testes/sdev/sdev' as Sdev;
+
+
+.container {
+  @include mx.make-container;
+
+  @each $bp, $max in m.$container-max-widths {
+    @media (min-width: map-get(m.$grid-breakpoints, $bp)) {
+      max-width: $max;
+    }
+  }
+}
+
+
+
