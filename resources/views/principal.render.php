@@ -9,12 +9,12 @@
 <body>
     
     <!-- Adiciona o header contido em /partials-->
-    @include('partials.header')
+    @include('components.header')
 
     <h1>Página principal</h1>
  
     <!-- Adiciona o footer contido em partials-->
-    @include('partials.footer')
+    @include('components.footer')
 
      
     <script src="/js/script.js"></script>

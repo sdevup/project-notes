@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    @include('partials.header')
+    @include('components.header')
 
     <h1>Página Teste</h1>
 
@@ -33,7 +33,7 @@
     </main>
 
 
-    @include('partials.footer')
+    @include('components.footer')
 
     <script src="/js/script.js"></script>
     <script src="/js/AbacateDEV.js"></script>
