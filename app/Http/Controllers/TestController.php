@@ -9,22 +9,8 @@ class TestController
     {
         $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
         return $renderer->render('abacate.test');
-    }
 
-    //rota para teste Pedro DEV
-     public function portifolio()
-    {
-        $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
-        return $renderer->render('abacate.portifolio');
     }
-
-    //
-     public function contatos()
-    {
-        $renderer = new \Framework\Render\Renderer(__DIR__ . '/../../../resources/views');
-        return $renderer->render('abacate.contatos');
-    }
-
 
 
 

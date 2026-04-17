@@ -11,8 +11,6 @@
       <a href="/test">
         Pedro DEV
       </a>
-    <a href="/portifolio">portifolio</a>
-    <a href="/contatos">Contatos</a>
 
 
       <a href="/test2">Sdev</a>
