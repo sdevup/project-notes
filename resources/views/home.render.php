@@ -12,7 +12,38 @@
     @include('components.header')
 
     <h1>Página home</h1>
- 
+    =======================================================
+
+
+    <h1 class="exibirDados">os dados aparecerão aqui</h1>
+
+    <button onclick="exibirDados()">Exibir dados</button>
+
+    <br/><br/>
+
+
+
+
+    ======================================================= 
+    <br/><br/>
+
+
+
+    <button id="btnBuscar">Buscar Usuário</button> 
+    <p class="status">
+
+    </p> 
+    <div class="usuario">
+        
+    </div>
+
+
+
+
+
+
+
+    
     <!-- Adiciona o footer contido em partials-->
     @include('components.footer')
 
