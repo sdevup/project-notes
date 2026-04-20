@@ -11,3 +11,6 @@ document.querySelectorAll('.teste2').forEach(element => {
 //passo 1 - usar javascript para criar para pegar o texto e adicionar a classe
 
 const texto = document.getElementsByTagName('.ps5').textContent;
+
+
+//toglle
