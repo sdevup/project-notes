@@ -1,29 +1,73 @@
+/* --- Seus estilos atuais (Mantidos) --- */
 
-
-.fundo{
-background-color: rgb(128, 107, 0)  ;
+.fundo {
+    background-color: #f0f0f0;
 }
 
-
-
-.botao_menu{
+.botao_menu {
     visibility: hidden; 
-  }
+}
 
-.navegacao{
+.navegacao {
     visibility: visible; 
 }
-
-
 
 @media (max-width: 576px) {
-  .botao_menu{
-    visibility: visible; 
-  }
+    .botao_menu {
+        visibility: visible; 
+    }
 
+    .navegacao {
+        visibility: hidden;
+    }
+}
 
-  .navegacao{
-    visibility: hidden;
-  }
+/* --- Novos estilos para os Cards (Adicione isto) --- */
 
+.container-abacate {
+    display: flex;          /* Coloca os cards em linha */
+    flex-wrap: wrap;        /* Se a tela for pequena, eles pulam para baixo */
+    justify-content: center; /* Centraliza o grupo de cards */
+    gap: 20px;              /* Espaço entre um card e outro */
+    padding: 20px;
+}
+
+.card-abacate {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    width: 180px;           /* Largura de cada card */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
+    
+    /* Alinhamento interno do card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-abacate img {
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.ps5 {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+}
+
+.teste2 {
+    background-color: #4CAF50; /* Um verde "abacate" para o botão */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.teste2:hover {
+    background-color: #45a049; /* Escurece ao passar o mouse */
 }
