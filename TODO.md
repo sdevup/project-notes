@@ -12,6 +12,51 @@ Este guia foi criado para organizar sua jornada do zero ao primeiro projeto func
 - [ ] **Estruturas Condicionais:** Criar lógica com `if`, `else if` e `else`.
     * *Exemplo: "Se a idade for maior que 18, permita a entrada".*
 
+
+```javascript
+
+
+var usuario = "Carlos";
+var eAdmin = true;
+
+if (eAdmin) {
+    var usuario = "ADMIN_SISTEMA"; // Você acha que está criando uma variável temporária
+    console.log("Dentro do if:", usuario); 
+}
+
+// BUG: O valor original "Carlos" foi perdido para sempre!
+console.log("Fora do if:", usuario); // Saída: "ADMIN_SISTEMA"
+
+A Solução com let (A Correção)
+
+O let respeita as chaves { }. O que acontece dentro do if fica no if.
+JavaScript
+
+let usuario = "Carlos";
+let eAdmin = true;
+
+if (eAdmin) {
+    let usuario = "ADMIN_SISTEMA"; // Variável local, diferente da global
+    console.log("Dentro do if:", usuario); // Saída: "ADMIN_SISTEMA"
+}
+
+// SUCESSO: A variável global "Carlos" permanece intacta!
+console.log("Fora do if:", usuario); // Saída: "Carlos"
+
+
+
+
+
+``` 
+
+
+
+
+
+
+
+
+
 ---
 
 ## 🟡 Nível 2: Automatização e Repetição

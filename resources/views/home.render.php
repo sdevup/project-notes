@@ -12,6 +12,29 @@
     @include('components.header')
 
     <h1>Página home</h1>
+
+
+    <pedro  >elemento 1 classe</pedro>
+    <pedro  >elemento 1 2 classe</pedro>
+
+
+
+    <p id="el2">elemento 2 id</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     =======================================================
 
 

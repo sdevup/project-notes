@@ -3,3 +3,27 @@
 .fundo{
 background-color: purple  ;
 }
+
+
+
+.botao_menu{
+    visibility: hidden; 
+  }
+
+.navegacao{
+    visibility: visible; 
+}
+
+
+
+@media (max-width: 576px) {
+  .botao_menu{
+    visibility: visible; 
+  }
+
+
+  .navegacao{
+    visibility: hidden;
+  }
+
+}

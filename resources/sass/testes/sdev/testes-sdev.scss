@@ -20,3 +20,25 @@ img{
 a{
     text-decoration: none;
 }
+
+.botao_menu{
+    display: none; 
+  }
+
+.navegacao{
+    display: block; 
+}
+
+
+
+@media (max-width: 576px) {
+  .botao_menu{
+    display: block; 
+  }
+
+
+  .navegacao{
+    display: none;
+  }
+
+}

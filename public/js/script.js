@@ -75,3 +75,29 @@ document.getElementById('btnBuscar').addEventListener('click', () => {
     console.log('Buscando dados...');
     fluxoSequencial();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var elemento = document.querySelectorAll('pedro');
+
+
