@@ -28,14 +28,9 @@
     display: block; 
   }
 
-  header{
-    display: block;
-    position: absolute;
-    width: 100%;
-  }
 
   .menu-nav{
-    display: none;
+    display: block;
     position: absolute;
     top: 55px;
     left: 0;
@@ -52,6 +47,10 @@
       background-color: gray;
       border-radius: 5px;
       padding: 5px;
-    }
+  }
+
+  .esconder{
+    display: none;
+  }
 
 }

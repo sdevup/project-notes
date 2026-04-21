@@ -86,12 +86,7 @@ var nav    = header.getElementsByTagName('nav')[0];
 var button = header.getElementsByTagName('svg')[0];
 
 button.addEventListener('click', () => {
-    // Se não estiver como block, força block. Se estiver, esconde.
-    if (nav.style.display !== 'block') {
-        nav.style.display = 'block';
-    } else {
-        nav.style.display = 'none';
-    }
+    nav.classList.toggle('esconder');
 });
 
 
