@@ -11,15 +11,7 @@
 @use '../../layout/flex';
 @use '../../utilities/flex-utils';
 
-
-img{
-  max-width: 100%;
-  height: auto;
-}
-
-a{
-    text-decoration: none;
-}
+@use '../../layout/reset';
 
 .botao_menu{
     display: none; 

@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as v;
+
+// 1. Box sizing global e reset de margens
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 2. Mixin para facilitar a limpeza de listas
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// 3. Configurações do Body
+body {
+  min-height: 100vh;
+  font-family: v.$font-family-base;
+  line-height: v.$line-height-base;
+  color: v.$body-color;
+  background-color: v.$body-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// 4. Elementos de mídia
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto; // Mantém a proporção
+}
+
+// 5. Tipografia e Links
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block; // Facilita transformações e paddings
+}
+
+ul, ol {
+  @include reset-list;
+}
+
+// 6. Formulários (Herança de fontes)
+input, button, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
