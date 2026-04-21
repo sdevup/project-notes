@@ -1,45 +1,19 @@
-/* --- Seus estilos atuais (Mantidos) --- */
-
-.fundo {
-    background-color: #f0f0f0;
-}
-
-.botao_menu {
-    visibility: hidden; 
-}
-
-.navegacao {
-    visibility: visible; 
-}
-
-@media (max-width: 576px) {
-    .botao_menu {
-        visibility: visible; 
-    }
-
-    .navegacao {
-        visibility: hidden;
-    }
-}
-
-/* --- Novos estilos para os Cards (Adicione isto) --- */
+/* ================= CARDS ================= */
 
 .container-abacate {
-    display: flex;          /* Coloca os cards em linha */
-    flex-wrap: wrap;        /* Se a tela for pequena, eles pulam para baixo */
-    justify-content: center; /* Centraliza o grupo de cards */
-    gap: 20px;              /* Espaço entre um card e outro */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     padding: 20px;
 }
 
 .card-abacate {
-    background-color: #ffffff;
+    background-color:#ffffff;
     border-radius: 12px;
-    padding: 15px;
-    width: 180px;           /* Largura de cada card */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
-    
-    /* Alinhamento interno do card */
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,27 +21,98 @@
 }
 
 .card-abacate img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
     border-radius: 8px;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .ps5 {
+    color: #000;
     font-weight: bold;
     font-family: Arial, sans-serif;
+    font-size: 1.2rem;
     margin: 10px 0;
 }
 
+.card-info {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
 .teste2 {
-    background-color: #4CAF50; /* Um verde "abacate" para o botão */
+    background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .teste2:hover {
-    background-color: #45a049; /* Escurece ao passar o mouse */
+    background-color: #45a049;
+}
+
+/* ================= FUNDO ================= */
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2c3e50, #4ca1af);
+    background-size: 300% 300%;
+    animation: fundoAnimado 10s ease infinite;
+    color: #fff;
+}
+
+@keyframes fundoAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ================= MENU ================= */
+
+/* Botão ☰ */
+.botao_menu {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Menu dropdown */
+.menu-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(33, 37, 41, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 200px;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+/* Quando ativo */
+.menu-nav.ativo {
+    display: flex;
+}
+
+/* Links do menu */
+.menu-nav a {
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-nav a:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
 }
