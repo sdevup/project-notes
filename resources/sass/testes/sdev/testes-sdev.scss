@@ -17,7 +17,7 @@
     display: none; 
   }
 
-.navegacao{
+.menu-nav{
     display: block; 
 }
 
@@ -28,9 +28,30 @@
     display: block; 
   }
 
+  header{
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+
+  .menu-nav{
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(15, 15, 33);
+  }
 
   .navegacao{
-    display: none;
+    width: 100%;
+    display: block;
   }
+
+  .navegacao:hover{
+      background-color: gray;
+      border-radius: 5px;
+      padding: 5px;
+    }
 
 }

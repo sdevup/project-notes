@@ -71,9 +71,27 @@ async function fluxoSequencial() {
 }
 
 
-document.getElementById('btnBuscar').addEventListener('click', () => {
-    console.log('Buscando dados...');
-    fluxoSequencial();
+// document.getElementById('btnBuscar').addEventListener('click', () => {
+//     console.log('Buscando dados...');
+//     fluxoSequencial();
+// });
+
+
+
+
+
+
+var header = document.getElementsByTagName('header')[0];
+var nav    = header.getElementsByTagName('nav')[0];
+var button = header.getElementsByTagName('svg')[0];
+
+button.addEventListener('click', () => {
+    // Se não estiver como block, força block. Se estiver, esconde.
+    if (nav.style.display !== 'block') {
+        nav.style.display = 'block';
+    } else {
+        nav.style.display = 'none';
+    }
 });
 
 
@@ -83,21 +101,5 @@ document.getElementById('btnBuscar').addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var elemento = document.querySelectorAll('pedro');
 
 
