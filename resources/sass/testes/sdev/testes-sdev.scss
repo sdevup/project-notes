@@ -30,7 +30,7 @@
 
 
   .menu-nav{
-    display: block;
+    display: none;
     position: absolute;
     top: 55px;
     left: 0;
@@ -50,7 +50,7 @@
   }
 
   .esconder{
-    display: none;
+    display: block;
   }
 
 }
