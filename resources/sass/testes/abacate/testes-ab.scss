@@ -76,7 +76,7 @@ body {
 
 /* Botão ☰ */
 .botao_menu {
-    position: absolute;
+    position: relative;
     right: 20px;
     top: 20px;
     width: 40px;
@@ -87,7 +87,7 @@ body {
 /* Menu dropdown */
 .menu-nav {
     display: none;
-    position: absolute;
+    position: relative;
     top: 60px;
     right: 20px;
     background-color: rgba(33, 37, 41, 0.95);
