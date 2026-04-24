@@ -8,7 +8,7 @@
     </div>
 
     <!-- MENU -->
-    <nav class="menu-nav d-flex flex-wrap justify-content-center">
+    <nav class="menu-nav">
       <a class="navegacao m-2 text-light" href="/">Home</a>
       <a class="navegacao m-2 text-light" href="/login">Login</a>
       <a class="navegacao m-2 text-light" href="/principal">Principal</a>

@@ -40,21 +40,19 @@
     </main>
 
     <script>
-document.addEventListener('DOMContentLoaded', () => {
+              document.addEventListener('DOMContentLoaded', () => {
 
-    const botao = document.querySelector('.botao_menu');
-    const menu = document.querySelector('.menu-nav');
+              const botao = document.querySelector('.botao_menu');
+                const menu = document.querySelector('.menu-nav');
 
-    console.log('botao:', botao);
-    console.log('menu:', menu);
+                         if (botao && menu) {
+                 botao.addEventListener('click', () => {
+                  menu.classList.toggle('ativo');
+                  });
+        }
 
-    botao.addEventListener('click', () => {
-        console.log('clicou!');
-        menu.classList.toggle('ativo');
     });
-
-});
-</script>
+    </script>
 
 </body>
 </html>

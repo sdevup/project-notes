@@ -72,47 +72,69 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* ================= MENU ================= */
+/* ================= MENU (DESKTOP) ================= */
 
-/* Botão ☰ */
+/* Botão ☰ escondido no desktop */
 .botao_menu {
-    position: relative;
-    right: 20px;
-    top: 20px;
+    display: none;
+    cursor: pointer;
     width: 40px;
     height: 40px;
-    cursor: pointer;
 }
 
-/* Menu dropdown */
+/* Menu visível no desktop */
 .menu-nav {
-    display: none;
-    position: relative;
-    top: 60px;
-    right: 20px;
-    background-color: rgba(33, 37, 41, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 15px;
-    border-radius: 10px;
-    min-width: 200px;
-    flex-direction: column;
-    z-index: 9999;
-}
-
-/* Quando ativo */
-.menu-nav.ativo {
     display: flex;
+    gap: 10px;
 }
 
-/* Links do menu */
+/* Links */
 .menu-nav a {
-    padding: 10px;
-    font-size: 16px;
+    padding: 8px 10px;
     text-decoration: none;
     color: #fff;
 }
 
-.menu-nav a:hover {
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 5px;
+/* ================= MENU (MOBILE) ================= */
+
+@media (max-width: 768px) {
+
+    /* Mostra botão ☰ */
+    .botao_menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    /* Esconde menu por padrão */
+    .menu-nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgba(33, 37, 41, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 15px;
+        border-radius: 10px;
+        min-width: 200px;
+        flex-direction: column;
+        z-index: 9999;
+    }
+
+    /* Quando clicar */
+    .menu-nav.ativo {
+        display: flex;
+    }
+
+    /* Links em coluna */
+    .menu-nav a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .menu-nav a:hover {
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 5px;
+    }
 }
