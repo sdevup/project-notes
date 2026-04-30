@@ -1001,3 +1001,32 @@ Agora você domina:
 ---
 
 Se quiser, posso te levar para um projeto nível portfólio (tipo app real mesmo).
+
+
+
+
+
+
+
+
+
+
+
+__________________________________________________
+
+
+Projeto 1
+https://dribbble.com/shots/14125478-Developer-Personal-Portifolio-Website
+
+
+flex box e grid layout
+
+https://www.youtube.com/watch?v=x-4z_u8LcGc
+
+
+
+
+
+ver landing page : https://dribbble.com/shots/24820686-Finpay-Fintech-Landing-Page
+
+

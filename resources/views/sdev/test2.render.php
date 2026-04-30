@@ -13,6 +13,64 @@
     @include('components.header')
 
     <main class="container-xl bg-success text-light p-4">
+
+
+    <div class="teste-flex">
+
+        <div>
+            item 1    
+        </div>
+
+
+        <div>
+            item 1    
+        </div>
+
+
+        <div>
+            item 1    
+        </div>
+
+
+        <div>
+            item 1    
+        </div>
+
+
+    </div>
+
+
+
+
+    <style>
+        .teste-flex {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .teste-flex > div {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+            flex: 1 1 200px; /* Cresce, encolhe e tem largura base de 200px */
+        }
+
+        
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
     
     <div>
 
@@ -140,28 +198,38 @@
 
 
 
+function minhaFuncao(resolve, reject) {
+    console.log("Iniciando carregamento...");
 
+    let sucesso = false; // Alterado para true para o Promise.all resolver com sucesso
+    
+    setTimeout(() => {
+        if (sucesso) {
+            resolve("Dados carregados com sucesso!");
+        } else {
+            reject("Erro ao carregar os dados.");
+        }
+    }, 2000);
+}
 
+let promisse1 = new Promise(minhaFuncao);
+let promisse2 = new Promise(minhaFuncao);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Usando Promise.all para executar ambas
+Promise.all([promisse1, promisse2])
+    .then(resultados => {
+        // 'resultados' é um array contendo o retorno de cada promisse na ordem original
+        console.log("Todas as promessas foram resolvidas:");
+        console.log("Resultado 1:", resultados[0]);
+        console.log("Resultado 2:", resultados[1]);
+    })
+    .catch(erro => {
+        // Se QUALQUER uma falhar, o catch é executado com o erro da primeira que falhou
+        console.error("Uma das promessas falhou:", erro);
+    })
+    .finally(() => {
+        console.log("Processo de múltiplas promessas finalizado.");
+    });
 
 
 
@@ -180,7 +248,9 @@
 
 
 
+            // algoritmos de ordenação
 
+            // lista, fila, pilha, lista_ciscular
 
 
 
